@@ -6,7 +6,7 @@ REM === Edit these lines to match your need ===
 set COMM_PORT=COM7
 set COMM_BAUD=9600
 set SERV_ADDR=blynk.cloud
-set SERV_PORT=8080
+set SERV_PORT=80
 
 REM === Edit lines below only if absolutely sure what you're doing ===
 

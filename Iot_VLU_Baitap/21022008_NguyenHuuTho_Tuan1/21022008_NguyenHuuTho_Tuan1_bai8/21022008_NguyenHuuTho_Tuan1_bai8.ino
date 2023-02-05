@@ -1,9 +1,17 @@
+#define pinLed 8
+#define pinLDR 9
+
 void setup() {
-  // put your setup code here, to run once:
+  pinMode(pinLDR, INPUT);
+  pinMode(pinLed, OUTPUT);
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  int temp =digitalRead(pinLDR);
+  delay(300);
+  if(temp==HIGH)
+    digitalWrite(pinLed, 1);
+  else
+    digitalWrite(pinLed, 0);
 }
