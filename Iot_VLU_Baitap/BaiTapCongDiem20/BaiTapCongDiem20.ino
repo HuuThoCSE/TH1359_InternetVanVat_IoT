@@ -6,8 +6,7 @@
 #define DHTTYPE DHT11
 DHT dht(pinDHT, DHTTYPE);
 
-int value, buf[3], i = 0;
-float avgValue = 0;
+float buf[3] = {0,0,0}, value =0, avgValue = 0;
 void setup() {
   pinMode(pinDHT, INPUT);
   pinMode(pinLed, OUTPUT);
@@ -21,13 +20,13 @@ void loop() {
   buf[2] = buf[1];
   buf[1] = buf[0];
   buf[0]=value;
-  avgValue = (buf[0]+buf[1]+buf[0])/3.0;
+  avgValue = (buf[0]+buf[1]+buf[2])/3.0;
   Serial.print("=>");
   Serial.println(avgValue);
   if(avgValue < 40)
     digitalWrite(pinLed, 1);
   else 
     digitalWrite(pinLed, 0);
-  delay(100);
+  delay(1000);
 }
 

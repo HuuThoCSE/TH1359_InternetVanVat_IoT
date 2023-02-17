@@ -3,7 +3,7 @@ setlocal EnableDelayedExpansion
 
 REM === Edit these lines to match your need ===
 
-set COMM_PORT=COM7
+set COMM_PORT=COM1
 set COMM_BAUD=9600
 set SERV_ADDR=blynk.cloud
 set SERV_PORT=80
@@ -67,10 +67,10 @@ goto:eof
     echo.
     echo.   The defaults are:
     echo.     -c    /dev/ttyUSB0       (on Linux)
-    echo.           COM7               (on Windows)
+    echo.           COM1               (on Windows)
     echo.           /dev/tty.usbserial (on OSX)
     echo.     -b    9600
-    echo.     -s    blynk-cloud.com
+    echo.     -s    blynk.cloud
     echo.     -p    80
     echo.
     echo.   If the specified serial port is not found, it will ask to enter another one.
