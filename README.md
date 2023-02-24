@@ -5,6 +5,9 @@
 ## Tài liệu tự soạn
 [Nhấn vào đây.](https://www.notion.so/huutho-vlu210222008/TH1359_InternetVanVat_IoT-bc284d5c202a4ef58fbb3b00856049fd)
 
+## Link tạo biểu tượng trên LCD: 
+[Nhấn vào đây.](https://maxpromer.github.io/LCD-Character-Creator/)
+
 # Quy ước một số tên linh kiện trên Protues
 
 |STT    |TÊN THỰC TẾ    |PROTUES    |
