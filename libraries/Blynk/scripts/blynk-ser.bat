@@ -3,7 +3,7 @@ setlocal EnableDelayedExpansion
 
 REM === Edit these lines to match your need ===
 
-set COMM_PORT=COM1
+set COMM_PORT=COM7
 set COMM_BAUD=9600
 set SERV_ADDR=blynk.cloud
 set SERV_PORT=80
